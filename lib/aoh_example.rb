@@ -15,10 +15,15 @@ end
 def literal_aoh
   # Using Array literal syntax only, build a nested array that uses the data in
   # held in the constants
-  literal_aoh = [{ name:  "Don Gately", occupation: "Live-in Staff" }, { name:  "Joelle van Dyne", occupation: "Radio Personality" }, { name:  "Pat Monteseian", occupation: "Staff" }, { name:  "Kate Gompert", occupation: "None" }, { name:  "Bruce Green", occupation: "Fan of Mildred" }]
+ # literal_aoh = [{ name:  "Don Gately", occupation: "Live-in Staff" }, { name:  "Joelle van Dyne", occupation: "Radio Personality" }, { name:  "Pat Monteseian", occupation: "Staff" }, { name:  "Kate Gompert", occupation: "None" }, { name:  "Bruce Green", occupation: "Fan of Mildred" }]
   
-  literal_aoh = Array.new
-  
+  literal_aoh = Array.new(5)
+  literal_aoh[0] = DON_G
+  literal_aoh[1] = JOELLE_VD
+  literal_aoh[2] = PAT_M
+  literal_aoh[3] = KATE_G
+  literal_aoh[4] = BRUCE_G
+  return literal_aoh
   
   
 end
